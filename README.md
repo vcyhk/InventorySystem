@@ -17,6 +17,8 @@ An inventory Management System developed using Java. It uses SQLite as database 
 - Sqlite-jdbc-3.7.2
 
 ## 🔧 Usage
+### Build and Run
+
 Default account:
 - Username: admin
 - Password: admin
