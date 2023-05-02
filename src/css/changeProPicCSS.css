@@ -1,9 +1,0 @@
-#icon{
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 2, 0, 0, 0);
-}
-
-#submitBtn{-fx-background-color: #58B2AC;}
-#submitBtn:hover{-fx-background-color: #4B9D98;}
-
-#selectBtn{-fx-background-color: #3DA669;}
-#selectBtn:hover{-fx-background-color: #1E6C3E;}

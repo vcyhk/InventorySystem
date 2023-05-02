@@ -1,6 +1,0 @@
-#overWriteBtn,#overWriteAllBtn,#skipDataBtn,#skipAllBtn,#keepNewBtn{
-    -fx-background-color: #E4E4E4;
-}
-#overWriteBtn:hover,#overWriteAllBtn:hover,#skipDataBtn:hover,#skipAllBtn:hover,#keepNewBtn:hover{
-    -fx-background-color: #D6D6D6
-}
