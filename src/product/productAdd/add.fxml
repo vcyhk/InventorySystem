@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="addScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="650.0" stylesheets="@/css/addCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="product.productAdd.AddController">
+    <children>
+        <VBox prefHeight="83.0" prefWidth="600.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create Product Information">
+                    <font>
+                        <Font name="Calibri Bold" size="38.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                    </VBox.margin>
+                </Text>
+                <Separator opacity="0.35" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                    </VBox.margin>
+                </Separator>
+            </children>
+        </VBox>
+        <HBox prefHeight="329.0" prefWidth="645.0">
+            <children>
+                <VBox prefHeight="322.0" prefWidth="250.0">
+                    <children>
+                        <HBox prefHeight="50.0" prefWidth="216.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="107.0" text="Item No.">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="itemNumAdd" prefHeight="25.0" prefWidth="117.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="216.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="108.0" text="Location">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="itemCatAdd" prefHeight="25.0" prefWidth="119.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="216.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="116.0" text="Item Description">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="itemDesAdd" prefWidth="128.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox fx:id="ageGpEdit" prefHeight="50.0" prefWidth="216.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="117.0" text="Unit">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="unitPriceAdd" prefHeight="25.0" prefWidth="129.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="342.0" prefWidth="246.0">
+                    <children>
+                        <HBox prefHeight="50.0" prefWidth="216.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="114.0" text="Effective From">
+                                    <HBox.margin>
+                                        <Insets left="20.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <DatePicker fx:id="effectFromAdd" prefHeight="25.0" prefWidth="140.0">
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="10.0" />
+                                    </HBox.margin></DatePicker>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="216.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="114.0" text="Effective To">
+                                    <HBox.margin>
+                                        <Insets left="20.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <DatePicker fx:id="effectToAdd" prefHeight="25.0" prefWidth="141.0">
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="10.0" />
+                                    </HBox.margin></DatePicker>
+                            </children>
+                        </HBox>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </VBox>
+                <VBox prefHeight="344.0" prefWidth="149.0">
+                    <children>
+                        <Region prefHeight="317.0" prefWidth="150.0" />
+                        <Button fx:id="createButton" mnemonicParsing="false" onAction="#confirmAdd" prefHeight="30.0" prefWidth="95.0" text="Create" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="25.0" right="25.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Calibri Bold" size="17.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+            <VBox.margin>
+                <Insets left="5.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

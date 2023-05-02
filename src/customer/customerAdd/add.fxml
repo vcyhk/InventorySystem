@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="addScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="650.0" stylesheets="@/css/addCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.customerAdd.AddController">
+   <children>
+      <VBox prefHeight="83.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create Customer Information">
+               <font>
+                  <Font name="Calibri Bold" size="38.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="25.0" top="15.0" />
+               </VBox.margin>
+            </Text>
+            <Separator opacity="0.35" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="10.0" />
+               </VBox.margin>
+            </Separator>
+         </children>
+      </VBox>
+      <HBox prefHeight="329.0" prefWidth="645.0">
+         <children>
+            <VBox prefHeight="322.0" prefWidth="250.0">
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="235.0">
+                     <children>
+                        <Label prefWidth="79.0" text="CID">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="cidAdd" prefHeight="25.0" prefWidth="141.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="216.0">
+                     <children>
+                        <Label prefWidth="79.0" text="First Name">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fnameAdd" prefWidth="140.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="216.0">
+                     <children>
+                        <Label prefHeight="15.0" prefWidth="79.0" text="Last Name">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="lnameAdd" prefWidth="140.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="216.0">
+                     <children>
+                        <Label prefHeight="15.0" prefWidth="79.0" text="Gender">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="genderAdd" prefWidth="140.0">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="F" />
+                                 <String fx:value="M" />
+                              </FXCollections>
+                           </items>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="ageGpEdit" prefHeight="50.0" prefWidth="216.0">
+                     <children>
+                        <Label prefWidth="79.0" text="Age Group">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="agegpAdd" prefWidth="140.0">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="13-19" />
+                                 <String fx:value="20-29" />
+                                 <String fx:value="30-39" />
+                                 <String fx:value="40-49" />
+                                 <String fx:value="50-59" />
+                                 <String fx:value="60-69" />
+                                 <String fx:value="70-79" />
+                                 <String fx:value="80-89" />
+                                 <String fx:value="90 or above" />
+                              </FXCollections>
+                           </items>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="216.0">
+                     <children>
+                        <Label prefWidth="79.0" text="Country">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="countryAdd" prefWidth="140.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin></ComboBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="342.0" prefWidth="246.0">
+               <children>
+                  <HBox layoutX="10.0" layoutY="210.0" prefHeight="50.0" prefWidth="216.0">
+                     <children>
+                        <Label prefWidth="79.0" text="District">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="districtAdd" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="216.0">
+                     <children>
+                        <Label prefWidth="79.0" text="Address">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addressAdd" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="216.0">
+                     <children>
+                        <Region prefHeight="50.0" prefWidth="105.0" />
+                        <TextField fx:id="address2Add" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin></TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="216.0">
+                     <children>
+                        <Region prefHeight="50.0" prefWidth="105.0" />
+                        <TextField fx:id="address3Add" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin></TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="216.0">
+                     <children>
+                        <Label prefWidth="79.0" text="E-mail">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="emailAdd" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="216.0">
+                     <children>
+                        <Label prefWidth="79.0" text="Phone">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="phoneAdd" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="344.0" prefWidth="149.0">
+               <children>
+                  <Region prefHeight="317.0" prefWidth="150.0" />
+                  <Button fx:id="createButton" mnemonicParsing="false" onAction="#confirmAdd" prefHeight="30.0" prefWidth="95.0" text="Create" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets left="5.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="editScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="650.0" stylesheets="@/css/editCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="payment.paymentEdit.EditController">
+    <children>
+        <VBox prefHeight="83.0" prefWidth="600.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Information">
+                            <font>
+                                <Font name="Calibri Bold" size="38.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="25.0" top="15.0" />
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                </HBox>
+                <Separator opacity="0.35" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                    </VBox.margin>
+                </Separator>
+            </children>
+        </VBox>
+        <HBox prefHeight="445.0" prefWidth="645.0">
+            <children>
+                <VBox prefHeight="322.0" prefWidth="250.0">
+                    <children>
+                        <HBox prefHeight="50.0" prefWidth="216.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="96.0" text="TID">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="tidEdit" prefHeight="25.0" prefWidth="158.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="5.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="216.0">
+                            <children>
+                                <Label prefHeight="15.0" prefWidth="79.0" text="Method">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <ComboBox fx:id="methodEdit" prefWidth="140.0">
+
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </ComboBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="322.0" prefWidth="250.0">
+                    <children>
+                        <HBox prefHeight="50.0" prefWidth="216.0">
+                            <children>
+                                <Label prefWidth="79.0" text="Amount">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="amountEdit" prefWidth="150.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="216.0">
+                            <children>
+                                <Label prefWidth="79.0" text="Date">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <DatePicker fx:id="dateEdit" prefWidth="150.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </DatePicker>
+                            </children>
+                        </HBox>
+
+                    </children>
+                    <HBox.margin>
+                        <Insets top="5.0" />
+                    </HBox.margin>
+                </VBox>
+                <VBox prefHeight="326.0" prefWidth="148.0">
+                    <children>
+                        <Region prefHeight="308.0" prefWidth="147.0" />
+                        <Button fx:id="editButton" mnemonicParsing="false" onAction="#confirmEdit" prefHeight="30.0" prefWidth="95.0" text="Edit" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="25.0" right="25.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Calibri Bold" size="17.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+            <VBox.margin>
+                <Insets left="5.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" />
+    </children>
+</VBox>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="importScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="685.0" stylesheets="@/css/importCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.customerImport.ImportController">
+    <children>
+        <VBox prefHeight="71.0" prefWidth="685.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Import Customer Data">
+                    <font>
+                        <Font name="Calibri Bold" size="38.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                    </VBox.margin>
+                </Text>
+                <Separator opacity="0.35" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                    </VBox.margin>
+                </Separator>
+            </children>
+        </VBox>
+        <VBox prefHeight="88.0" prefWidth="685.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="73.0" prefWidth="685.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="686.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="70.0" text="File Name :">
+                                    <font>
+                                        <Font name="Corbel Bold" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="25.0" />
+                                    </HBox.margin>
+                                </Label>
+                        <Label fx:id="filename" prefHeight="17.0" prefWidth="411.0">
+                           <font>
+                              <Font name="Corbel Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="selectBtn" mnemonicParsing="false" onAction="#selectFile" prefHeight="30.0" prefWidth="111.0" text="Choose File" textFill="#fafafa">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font></Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <Separator opacity="0.35" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                    </VBox.margin>
+                </Separator>
+            </children>
+        </VBox>
+        <HBox alignment="TOP_CENTER" prefHeight="505.0" prefWidth="685.0">
+            <children>
+                <TableView fx:id="importTable" prefHeight="528.0" prefWidth="653.0" HBox.hgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="col_cid" prefWidth="55.0" text="CID" />
+                        <TableColumn fx:id="col_Fname" prefWidth="85.0" text="First Name" />
+                        <TableColumn fx:id="col_Lname" prefWidth="85.0" text="Last Name" />
+                        <TableColumn fx:id="col_Gender" prefWidth="60.0" text="Gender" />
+                        <TableColumn fx:id="col_AgeGp" prefWidth="82.0" text="Age Group" />
+                        <TableColumn fx:id="col_Country" prefWidth="88.0" text="Country" />
+                        <TableColumn fx:id="col_Address1" prefWidth="127.0" text="Address1" />
+                        <TableColumn fx:id="col_Address2" prefWidth="127.0" text="Address2" />
+                        <TableColumn fx:id="col_Address3" prefWidth="127.0" text="Address3" />
+                        <TableColumn fx:id="col_District" prefWidth="71.0" text="District" />
+                        <TableColumn fx:id="col_Email" prefWidth="86.0" text="E-mail" />
+                        <TableColumn fx:id="col_Phone" prefWidth="79.0" text="Phone" />
+                    </columns>
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="16.0" right="16.0" top="10.0" />
+                    </HBox.margin>
+                </TableView>
+            </children>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" prefHeight="82.0" prefWidth="680.0">
+            <children>
+                <VBox prefHeight="344.0" prefWidth="149.0">
+                    <children>
+                        <Button fx:id="importBtn" mnemonicParsing="false" onAction="#importCustomer" prefHeight="30.0" prefWidth="95.0" text="Import" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="25.0" right="25.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Calibri Bold" size="17.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+            <VBox.margin>
+                <Insets left="5.0" top="10.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

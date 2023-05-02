@@ -1,0 +1,50 @@
+#loginBackground{
+    -fx-background-image: url('/resources/loginLeftBg.jpg');
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+#loginRightColoum{
+    -fx-background-color: #F8F8F8;
+    -fx-effect: dropshadow(three-pass-box, #767676, 10,0,0,10);
+    -fx-background-radius: 20 0 0 20;
+}
+#loginMessage{
+    -fx-text-fill: red;
+}
+
+#closeButton{
+    -fx-border-style: none;
+    -fx-background-color: transparent;
+    -fx-background-image: url('/resources/close.png');
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 50;
+}
+
+#closeButton:hover{
+    -fx-background-color: #ECECEC;
+}
+
+#dbStatusCol{
+    -fx-background-radius: 0 0 0 20;
+    -fx-background-color: #ffffff;
+}
+
+#loginButton:hover{
+     -fx-background-color: #343434;
+}
+
+#loginButton{
+     -fx-background-color: #4F4F4F;
+}
+
+#nameInput{
+    -fx-background-color: transparent;
+    -fx-border-color: #4C84A9;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+#passInput{
+    -fx-background-color: transparent;
+    -fx-border-color: #4C84A9;
+    -fx-border-width: 0px 0px 2px 0px;
+}

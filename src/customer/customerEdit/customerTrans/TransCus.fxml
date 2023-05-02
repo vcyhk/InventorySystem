@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="685.0" stylesheets="@/css/addCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.customerEdit.customerTrans.TransCusController">
+    <children>
+        <VBox prefHeight="74.0" prefWidth="685.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction Record">
+                    <font>
+                        <Font name="Calibri Bold" size="38.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                    </VBox.margin>
+                </Text>
+                <Separator opacity="0.35" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                    </VBox.margin>
+                </Separator>
+            </children>
+        </VBox>
+      <VBox alignment="CENTER" prefHeight="106.0" prefWidth="685.0">
+         <children>
+                  <HBox prefHeight="118.0" prefWidth="685.0">
+                      <children>
+                  <HBox prefHeight="40.0" prefWidth="154.0">
+                     <children>
+                                <Label prefHeight="17.0" prefWidth="47.0" text="CID :">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                        <Label fx:id="cidLabel" prefHeight="15.0" prefWidth="78.0">
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                        <HBox prefHeight="47.0" prefWidth="307.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="118.0" text="Customer  Name: ">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                        <Label fx:id="cNameLabel" prefHeight="15.0" prefWidth="140.0">
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                            </children>
+                        </HBox>
+                      </children>
+                  </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="TOP_CENTER" prefHeight="459.0" prefWidth="685.0">
+         <children>
+            <TableView fx:id="transTable" prefHeight="348.0" prefWidth="652.0">
+              <columns>
+                <TableColumn fx:id="col_tid" prefWidth="76.0" text="TID" />
+                  <TableColumn fx:id="col_Location" prefWidth="94.0" text="Location" />
+                  <TableColumn fx:id="col_teamCat" prefWidth="157.0" text="Transaction DateTime" />
+                  <TableColumn fx:id="col_itemDesc" prefWidth="139.0" text="Transaction Amount" />
+                  <TableColumn fx:id="col_unitPrice" minWidth="0.0" prefWidth="76.0" text="Discount" />
+                  <TableColumn fx:id="col_NetAmt" prefWidth="109.0" text="Net Amount" />
+              </columns>
+            </TableView>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+        <HBox alignment="CENTER_RIGHT" prefHeight="65.0" prefWidth="680.0">
+            <VBox.margin>
+                <Insets left="5.0" top="15.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>
