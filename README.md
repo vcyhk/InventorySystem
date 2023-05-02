@@ -1,10 +1,27 @@
 # InventorySystem
+An inventory Management System developed using Java. It uses SQLite as database and JavaFX to create the GUI.
 
-## Features
+## 🎯 Features:  
+- Inventory Management  
+- Stock tracking  
+- Transaction Management  
+- Customer Management  
+- Migrate from existing records  
+- Export all the records
 
-## Prerequisites
+## 🖥 Prerequisites
+- OpenJDK 17
+- JavaFX 20
+- Apache Commons Math 3.6
+- Apache POI 4.1
+- Sqlite-jdbc-3.7.2
 
-## Preview
+## 🔧 Usage
+Default account:
+- Username: admin
+- Password: admin
+
+## 🖼 Preview
 
 ### Login
 ![Alt text](/sceenshots/login.png)
