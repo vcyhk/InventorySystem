@@ -18,8 +18,12 @@ An inventory Management System developed using Java. It uses SQLite as database 
 
 ## 🔧 Usage
 ### Build and Run
+1. Edit Run Configurations  
+- SDK: OpenJDK 17  
+- Main Class: launcher.Launcher
+- Program arguements: --module-path "YOUR_JAVAFX_PATH" --add-modules javafx.controls,javafx.fxml  
 
-Default account:
+2. Default Login Account  
 - Username: admin
 - Password: admin
 
