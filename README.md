@@ -24,22 +24,27 @@ Default account:
 ## 🖼 Preview
 
 ### Login
-![Alt text](/sceenshots/login.png)
+![](/sceenshots/login.png)
 
 ### Customer
-![Alt text](/sceenshots/customer.png)
+![](/sceenshots/customer.png)
+<img src="/sceenshots/createCustomer.png" width=50% height=50%><img src="/sceenshots/editCustomer.png" width=50% height=50%>
 
 ### Transaction
 ![Alt text](/sceenshots/transaction.png)
+<img src="/sceenshots/createTxn.png" width=50% height=50%><img src="/sceenshots/editTxn.png" width=50% height=50%>
 
 ### Product
 ![Alt text](/sceenshots/product.png)
+<img src="/sceenshots/createProduct.png" width=50% height=50%><img src="/sceenshots/editProduct.png" width=50% height=50%>
 
 ### Promotion
 ![Alt text](/sceenshots/promotion.png)
+<img src="/sceenshots/createPro.png" width=50% height=50%><img src="/sceenshots/editPro.png" width=50% height=50%>
 
 ### Payment
 ![Alt text](/sceenshots/payment.png)
+<img src="/sceenshots/createPayment.png" width=50% height=50%><img src="/sceenshots/editPayment.png" width=50% height=50%>
 
 ### Dashboard
 ![Alt text](/sceenshots/dashboard.png)
