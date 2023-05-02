@@ -1,0 +1,14 @@
+#dbox1,#dbox2,#dbox3,#dbox4,#dbox5{
+    -fx-background-color: #FEFEFE;
+    -fx-background-radius: 4;
+    -fx-effect: dropshadow(three-pass-box, #BBBBBB, 2,0,3,3);
+}
+
+.default-color0.chart-pie { -fx-pie-color: #5BB76F; }
+.default-color1.chart-pie { -fx-pie-color: #F2867E; }
+.default-color2.chart-pie { -fx-pie-color: #7EACF2; }
+.default-color3.chart-pie { -fx-pie-color: #D07AD8; }
+.default-color4.chart-pie { -fx-pie-color: #F2D97E; }
+.chart-legend {
+   -fx-background-color:  #EDEDED;
+}

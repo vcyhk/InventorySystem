@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="editScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="763.0" stylesheets="@/css/editCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transaction.transactionEdit.EditController">
+    <children>
+        <VBox prefHeight="83.0" prefWidth="600.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction Record">
+                    <font>
+                        <Font name="Calibri Bold" size="38.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                    </VBox.margin>
+                </Text>
+                <Separator opacity="0.35" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                    </VBox.margin>
+                </Separator>
+            </children>
+        </VBox>
+        <VBox prefHeight="106.0" prefWidth="685.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="105.0" prefWidth="685.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="115.0">
+                            <children>
+                                <Label text="TID">
+                                    <font>
+                                        <Font name="Corbel Bold" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="15.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="transTidShow" prefHeight="25.0" prefWidth="65.0">
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="115.0">
+                            <children>
+                                <Label prefHeight="15.0" prefWidth="27.0" text="CID">
+                                    <HBox.margin>
+                                        <Insets left="6.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel Bold" size="14.0" />
+                                    </font></Label>
+                                <TextField fx:id="transCidShow" prefHeight="25.0" prefWidth="65.0">
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children></HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="164.0">
+                            <children>
+                                <Label prefHeight="15.0" prefWidth="57.0" text="Location">
+                                    <HBox.margin>
+                                        <Insets left="6.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="transLocatShow" prefHeight="25.0" prefWidth="91.0">
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="147.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="34.0" text="Date">
+                                    <font>
+                                        <Font name="Corbel Bold" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="transDTShow" prefHeight="25.0" prefWidth="95.0">
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="229.0">
+                     <children>
+                        <Label text="Payment Method">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="transPayMethodShow" prefHeight="25.0" prefWidth="98.0">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="105.0" prefWidth="685.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="291.0">
+                            <children>
+                                <Label prefHeight="15.0" prefWidth="125.0" text="Transaction Amount">
+                                    <HBox.margin>
+                                        <Insets left="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="transTamountShow" prefHeight="25.0" prefWidth="102.0">
+                                    <HBox.margin>
+                                        <Insets left="8.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="233.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="114.0" text="Discount Amount">
+                                    <font>
+                                        <Font name="Corbel Bold" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin></Label>
+                                <TextField fx:id="transDamountShow" prefHeight="25.0" prefWidth="84.0">
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="218.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="81.0" text="Net Amount">
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="transNetamountShow" prefHeight="25.0" prefWidth="102.0">
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin></TextField>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="100.0">
+                            <children>
+                                <Pane prefHeight="48.0" prefWidth="37.0" />
+                                <Button fx:id="editOverBtn" mnemonicParsing="false" onAction="#modifyOverData" prefHeight="30.0" prefWidth="30.0">
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                            <HBox.margin>
+                                <Insets right="15.0" />
+                            </HBox.margin>
+                        </HBox>
+                    </children></HBox>
+                <Separator opacity="0.35" prefHeight="21.0" prefWidth="655.0">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                    </VBox.margin>
+                </Separator>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="274.0" prefWidth="685.0">
+            <children>
+                <HBox prefHeight="64.0" prefWidth="650.0">
+                    <children>
+                        <HBox prefHeight="41.0" prefWidth="299.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="111.0" text="CID">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="cidEdit" prefHeight="25.0" prefWidth="122.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="297.0">
+                            <children>
+                                <Label prefHeight="15.0" prefWidth="140.0" text="Unit Price">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="unitPriceEdit" onInputMethodTextChanged="#countItem" onKeyPressed="#countItem" onKeyReleased="#countItem" onKeyTyped="#countItem" prefHeight="25.0" prefWidth="132.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <HBox prefHeight="64.0" prefWidth="650.0">
+                    <children>
+                        <HBox prefHeight="57.0" prefWidth="297.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="110.0" text="Item Number">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="itemNoEdit" onInputMethodTextChanged="#loadItem" onKeyPressed="#loadItem" onKeyReleased="#loadItem" onKeyTyped="#loadItem" onMouseExited="#loadItem" prefHeight="25.0" prefWidth="122.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="52.0" prefWidth="311.0">
+                            <children>
+                                <Label prefHeight="15.0" prefWidth="140.0" text="Number of Unit">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="noOfUnitEdit" onInputMethodTextChanged="#countItem" onKeyPressed="#countItem" onKeyReleased="#countItem" onKeyTyped="#countItem" prefHeight="25.0" prefWidth="132.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <HBox prefHeight="64.0" prefWidth="490.0">
+                    <children>
+                        <HBox prefHeight="35.0" prefWidth="297.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="110.0" text="Item Category">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="itemCatEdit" prefWidth="122.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="331.0">
+                            <children>
+                                <Label prefHeight="15.0" prefWidth="140.0" text="Discount">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="disEdit" onInputMethodTextChanged="#countItem" onKeyPressed="#countItem" onKeyReleased="#countItem" onKeyTyped="#countItem" prefWidth="132.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin></TextField>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <HBox prefHeight="64.0" prefWidth="650.0">
+                    <children>
+                        <HBox prefHeight="50.0" prefWidth="297.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="110.0" text="Item Description">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="itemDescEdit" prefHeight="25.0" prefWidth="122.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="52.0" prefWidth="308.0">
+                            <children>
+                                <Label prefHeight="15.0" prefWidth="140.0" text="Items Total">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="itemTotEdit" prefWidth="132.0">
+                                    <HBox.margin>
+                                        <Insets top="15.0" />
+                                    </HBox.margin>
+                        </TextField>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="148.0">
+                            <children>
+                        <Pane prefHeight="64.0" prefWidth="32.0" />
+                              <Button fx:id="itemConfirmBtn" mnemonicParsing="false" onAction="#modifyData" prefHeight="30.0" prefWidth="30.0">
+                                  <HBox.margin>
+                                      <Insets left="10.0" />
+                                  </HBox.margin>
+                              </Button>
+                                <Button fx:id="itemAddBtn" mnemonicParsing="false" onAction="#itemAdd" prefHeight="30.0" prefWidth="30.0">
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="itemDelBtn" mnemonicParsing="false" onAction="#itemDel" prefHeight="30.0" prefWidth="30.0">
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                            <HBox.margin>
+                                <Insets right="15.0" />
+                            </HBox.margin>
+                        </HBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox alignment="TOP_CENTER" prefHeight="157.0" prefWidth="685.0">
+            <children>
+                <TableView fx:id="editTable" prefHeight="149.0" prefWidth="735.0">
+                    <columns>
+                        <TableColumn fx:id="col_sel" prefWidth="22.0" />
+                        <TableColumn fx:id="col_tid" prefWidth="42.0" text="TID" />
+                        <TableColumn fx:id="col_itemNo" prefWidth="68.11322784423828" text="Item No." />
+                        <TableColumn fx:id="col_teamCat" prefWidth="134.7546844482422" text="Item Category" />
+                        <TableColumn fx:id="col_itemDesc" prefWidth="94.2264404296875" text="Item Desc" />
+                        <TableColumn fx:id="col_unitPrice" prefWidth="99.4339599609375" text="Unit Price" />
+                        <TableColumn fx:id="col_noOfUnit" prefWidth="95.20755004882812" text="No. of Unit" />
+                        <TableColumn fx:id="col_dis" prefWidth="89.50946044921875" text="Discount" />
+                        <TableColumn fx:id="col_itemTot" prefWidth="91.90570068359375" text="Items Total" />
+                    </columns>
+                    <contextMenu>
+                        <ContextMenu>
+                            <items>
+                                <MenuItem fx:id="editMenu" mnemonicParsing="false" onAction="#handlEditOption" text="Edit" />
+                            </items>
+                        </ContextMenu>
+                    </contextMenu>
+                </TableView>
+            </children>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="680.0">
+            <children>
+                <VBox prefHeight="344.0" prefWidth="149.0">
+                    <children>
+                        <Button fx:id="editButton" mnemonicParsing="false" onAction="#confirmEdit" prefHeight="30.0" prefWidth="95.0" text="Edit" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="25.0" right="25.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Calibri Bold" size="17.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+            <VBox.margin>
+                <Insets left="5.0" top="15.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

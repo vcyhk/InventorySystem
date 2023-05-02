@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="importSelScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="524.0" stylesheets="@/css/importSelectCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.customerImport.WindowController">
+    <children>
+        <VBox prefHeight="437.0" prefWidth="650.0">
+            <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="524.0">
+               <children>
+                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Record Already Exists ">
+                          <font>
+                              <Font name="Calibri Bold" size="38.0" />
+                          </font>
+                     <HBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </HBox.margin>
+                      </Text>
+               </children>
+            </HBox>
+                <Separator opacity="0.35" prefHeight="0.0" prefWidth="494.0">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                    </VBox.margin>
+                </Separator>
+            <VBox prefHeight="428.0" prefWidth="524.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="84.0" prefWidth="524.0">
+                     <children>
+                        <Label prefHeight="15.0" prefWidth="58.0" text="There has" />
+                        <Label fx:id="totalExist" alignment="CENTER" prefHeight="17.0" prefWidth="66.0" textFill="#30679e">
+                           <font>
+                              <Font name="Calibri Bold" size="14.0" />
+                           </font></Label>
+                        <Label text="records already exist." />
+                     </children>
+                     <padding>
+                        <Insets left="35.0" />
+                     </padding></HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="91.0" prefWidth="524.0">
+                     <padding>
+                        <Insets left="35.0" />
+                     </padding>
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="87.0" text="Record (CID) :">
+                           <font>
+                              <Font name="Corbel Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="cidLabel" alignment="CENTER" prefHeight="17.0" prefWidth="63.0" textFill="#2772d3">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Dubai Bold" size="14.0" />
+                           </font></Label>
+                        <Label text="already exist.">
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font></Label>
+                     </children></HBox>
+                  <HBox alignment="CENTER" prefHeight="109.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="overWriteBtn" mnemonicParsing="false" onAction="#overWrite" prefHeight="40.0" prefWidth="462.0" text="Overwrite">
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font></Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin></HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="overWriteAllBtn" mnemonicParsing="false" onAction="#overWriteAll" prefHeight="40.0" prefWidth="462.0" text="Overwrite All Records">
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font></Button>
+                     </children></HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="skipDataBtn" mnemonicParsing="false" onAction="#skipData" prefHeight="40.0" prefWidth="462.0" text="Skip This Record">
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font></Button>
+                     </children></HBox>
+                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                       <children>
+                           <Button fx:id="skipAllBtn" mnemonicParsing="false" onAction="#skipAll" prefHeight="40.0" prefWidth="462.0" text="Skip All Records">
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font></Button>
+                       </children></HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="keepNewBtn" mnemonicParsing="false" onAction="#keepNew" prefHeight="40.0" prefWidth="462.0" text="Keep Both Records But Generate A New CID">
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+            </children>
+        </VBox>
+    </children>
+</VBox>

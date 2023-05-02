@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="setScene" prefHeight="400.0" prefWidth="600.0" stylesheets="@/css/settingAboutCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="setting.settingAbout.AboutController">
+   <children>
+      <VBox fx:id="abtLogo" alignment="CENTER" prefHeight="189.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="closeButton" mnemonicParsing="false" onAction="#closeWindow" prefHeight="30.0" prefWidth="30.0" />
+               </children>
+               <padding>
+                  <Insets right="6.0" top="6.0" />
+               </padding></HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="131.0" prefWidth="600.0">
+               <children>
+                  <ImageView fitHeight="54.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="55.0" prefWidth="300" text="Inventory System">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Corbel Bold" size="33.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.6047619047619048">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.007518796992481203">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.49738366185734606">
+                                 <color>
+                                    <Color red="0.7368420958518982" green="0.7368420958518982" blue="0.7368420958518982" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="249.0" prefWidth="550.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="86.0" prefWidth="550.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="80.0" text="Version : 1.0">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets left="25.0" right="25.0" />
+         </VBox.margin></VBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="86.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="221.0" text="Copyright © github.com/vcyhk" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="15.0" />
+         </padding></HBox>
+   </children>
+</VBox>

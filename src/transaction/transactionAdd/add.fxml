@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="addScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="783.0" stylesheets="@/css/addCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transaction.transactionAdd.AddController">
+    <children>
+        <VBox prefHeight="83.0" prefWidth="600.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create Transaction Record">
+                    <font>
+                        <Font name="Calibri Bold" size="38.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                    </VBox.margin>
+                </Text>
+                <Separator opacity="0.35" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                    </VBox.margin>
+                </Separator>
+            </children>
+        </VBox>
+      <VBox alignment="CENTER" prefHeight="309.0" prefWidth="685.0">
+         <children>
+                  <HBox prefHeight="64.0" prefWidth="650.0">
+                      <children>
+                  <HBox prefHeight="48.0" prefWidth="329.0">
+                     <children>
+                                <Label prefHeight="17.0" prefWidth="111.0" text="CID">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="cidAdd" prefHeight="25.0" prefWidth="122.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                     </children>
+                  </HBox>
+                        <HBox prefHeight="47.0" prefWidth="307.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="140.0" text="Location">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <ComboBox fx:id="locationAdd" prefHeight="25.0" prefWidth="132.0">
+                                    <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                        </FXCollections>
+                                    </items>
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </ComboBox>
+                            </children>
+                        </HBox>
+                      </children>
+                  </HBox>
+            <HBox prefHeight="64.0" prefWidth="650.0">
+               <children>
+                        <HBox prefHeight="48.0" prefWidth="329.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="110.0" text="Item Number">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="itemNoAdd" onInputMethodTextChanged="#loadItem" onKeyPressed="#loadItem" onKeyReleased="#loadItem" onKeyTyped="#loadItem" onMouseExited="#loadItem" prefHeight="25.0" prefWidth="122.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox fx:id="ageGpEdit" prefHeight="47.0" prefWidth="332.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="140.0" text="Transaction Date">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                        <TextField fx:id="transDTAdd" prefWidth="132.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                            </children>
+                        </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="64.0" prefWidth="490.0">
+               <children>
+                        <HBox prefHeight="49.0" prefWidth="329.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="110.0" text="Item Category">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="itemCatAdd" prefWidth="122.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                        </TextField>
+                            </children>
+                        </HBox>
+                  <HBox prefHeight="52.0" prefWidth="311.0">
+                     <children>
+                        <Label prefHeight="15.0" prefWidth="140.0" text="Number of Unit">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="noOfUnitAdd" onInputMethodTextChanged="#countItem" onKeyPressed="#countItem" onKeyReleased="#countItem" onKeyTyped="#countItem" prefHeight="25.0" prefWidth="132.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="64.0" prefWidth="650.0">
+               <children>
+                        <HBox prefHeight="49.0" prefWidth="329.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="110.0" text="Item Description">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="itemDescAdd" prefHeight="25.0" prefWidth="122.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                  <HBox prefHeight="50.0" prefWidth="331.0">
+                     <children>
+                        <Label prefHeight="15.0" prefWidth="140.0" text="Discount">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="disAdd" onInputMethodTextChanged="#countItem" onKeyPressed="#countItem" onKeyReleased="#countItem" onKeyTyped="#countItem" prefWidth="132.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin></TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="650.0">
+               <children>
+                        <HBox prefHeight="49.0" prefWidth="329.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="110.0" text="Unit Price">
+                                    <HBox.margin>
+                                        <Insets left="25.0" top="15.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Corbel" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="unitPriceAdd" onInputMethodTextChanged="#countItem" onKeyPressed="#countItem" onKeyReleased="#countItem" onKeyTyped="#countItem" prefWidth="122.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                  <HBox prefHeight="52.0" prefWidth="308.0">
+                     <children>
+                        <Label prefHeight="15.0" prefWidth="140.0" text="Items Total">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Corbel" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="itemTotAdd" prefWidth="132.0">
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin></TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="394.0">
+                     <children>
+                        <Label prefHeight="15.0" prefWidth="110.0" text="Payment Method">
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="paymentMethodAdd" prefHeight="25.0" prefWidth="122.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="49.0" prefWidth="307.0" />
+                  <Button fx:id="itemAddBtn" mnemonicParsing="false" onAction="#itemAdd" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="itemDelBtn" mnemonicParsing="false" onAction="#itemDel" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="TOP_CENTER" prefHeight="184.0" prefWidth="685.0">
+         <children>
+            <TableView fx:id="addTable" prefHeight="168.0" prefWidth="753.0">
+              <columns>
+                  <TableColumn fx:id="col_sel" prefWidth="22.0" />
+                  <TableColumn fx:id="col_tid" prefWidth="42.0" text="TID" />
+                  <TableColumn fx:id="col_itemNo" prefWidth="68.11322784423828" text="Item No." />
+                  <TableColumn fx:id="col_teamCat" prefWidth="134.7546844482422" text="Item Category" />
+                  <TableColumn fx:id="col_itemDesc" prefWidth="94.2264404296875" text="Item Desc" />
+                  <TableColumn fx:id="col_unitPrice" prefWidth="99.4339599609375" text="Unit Price" />
+                  <TableColumn fx:id="col_noOfUnit" prefWidth="95.20755004882812" text="No. of Unit" />
+                  <TableColumn fx:id="col_dis" prefWidth="89.50946044921875" text="Discount" />
+                  <TableColumn fx:id="col_itemTot" prefWidth="91.90570068359375" text="Items Total" />
+              </columns>
+            </TableView>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+        <HBox alignment="CENTER_RIGHT" prefHeight="65.0" prefWidth="680.0">
+            <children>
+                <VBox prefHeight="344.0" prefWidth="149.0">
+                    <children>
+                        <Button fx:id="createButton" mnemonicParsing="false" onAction="#confirmAdd" prefHeight="30.0" prefWidth="95.0" text="Create" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="25.0" right="25.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Calibri Bold" size="17.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+            <VBox.margin>
+                <Insets left="5.0" top="15.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

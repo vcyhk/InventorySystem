@@ -1,0 +1,16 @@
+#abtLogo{
+    -fx-background-color: #343434;
+}
+
+#closeButton{
+     -fx-border-style: none;
+     -fx-background-color: transparent;
+     -fx-background-image: url('/resources/close_w.png');
+     -fx-background-position: center;
+     -fx-background-repeat: no-repeat;
+     -fx-background-radius: 50;
+ }
+
+#closeButton:hover{
+     -fx-background-color: #4D4D4D;
+}
