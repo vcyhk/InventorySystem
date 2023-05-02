@@ -10,9 +10,9 @@ An inventory Management System developed using Java. It uses SQLite as database 
 - Export all the records
 
 ## 🖥 Prerequisites
-- OpenJDK 17
+- OpenJDK 17  
+### Library:  
 - JavaFX 20
-- Apache Commons Math 3.6
 - Apache POI 4.1
 - Sqlite-jdbc-3.7.2
 
