@@ -1,4 +1,6 @@
 # InventorySystem
+![](/sceenshots/inventorySystem.png)
+
 An inventory Management System developed using Java. It uses SQLite as database and JavaFX to create the GUI.
 
 ## 🎯 Features:  
